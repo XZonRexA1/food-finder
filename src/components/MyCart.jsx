@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart")) || "[]";
+const cartFromLocalStorage = JSON.parse(localStorage?.getItem("cart")) || "[]";
 
 const MyCart = ({ cartItems }) => {
   const [cartData, setCartData] = useState(cartFromLocalStorage);
@@ -21,7 +21,7 @@ const MyCart = ({ cartItems }) => {
   };
   return (
     <div>
-      <div className="relative">
+      <div className="relative -ml-8">
         <button onClick={openModal} className="cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,8 @@ const MyCart = ({ cartItems }) => {
         )}
       </div>
 
-      {isModalOpen && (
+
+      {isModalOpen && cartData?.length > 0 && (
         <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
           <div className="relative w-[400px] max-w-md mx-auto my-6">
             <div className="relative flex flex-col w-full bg-white border-gray-300 rounded-xl shadow-lg">
@@ -75,33 +76,36 @@ const MyCart = ({ cartItems }) => {
                 <ul>
                   {cartData.map((item, index) => (
                     <li key={index} className="mb-4">
-                      <div className="flex items-center">
+                      <div className="flex justify-center items-center">
                         <img
                           src={item.image}
                           alt={item.name}
-                          className="w-10 h-10 object-cover rounded-md mr-4"
+                          className="w-24 h-full object-cover rounded-md mr-4"
                         />
-                        <div>
+                        <div className="">
                           <p className="font-semibold">{item.name}</p>
-                          <p className="text-gray-500">{item.price}</p>
+                          <p className="text-gray-500">
+                            Price: {item.price} x {item.quantity} ={" "}
+                            {item.totalPrice.toFixed(2)}
+                          </p>
+                          <button
+                            onClick={() => removeFromCart(index)}
+                            className="text-red-500  hover:text-red-700"
+                          >
+                            <svg
+                              className="w-5 h-5"
+                              fill="none"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                          </button>
                         </div>
                       </div>
-                      <button
-                          onClick={() => removeFromCart(index)}
-                          className="text-red-500 hover:text-red-700"
-                        >
-                          <svg
-                            className="w-5 h-5"
-                            fill="none"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M6 18L18 6M6 6l12 12"></path>
-                          </svg>
-                        </button>
                     </li>
                   ))}
                 </ul>
@@ -110,11 +114,11 @@ const MyCart = ({ cartItems }) => {
           </div>
         </div>
       )}
+      {isModalOpen && cartData?.length === 0 && closeModal()}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black opacity-25"></div>
       )}
     </div>
   );
 };
-
 export default MyCart;

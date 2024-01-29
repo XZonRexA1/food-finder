@@ -1,34 +1,66 @@
-import { useProductContext } from '../hooks/useProductContext';
-import { useState } from 'react';
-import MyCart from './MyCart';
+import { useProductContext } from "../hooks/useProductContext";
+import { useState } from "react";
+import MyCart from "./MyCart";
 
 const ProductList = () => {
   const { data, searchQuery, selectedCategory } = useProductContext();
-  const [cartItems, setCartItems] = useState([]); // State to keep track of cart items
+  const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart")) || [];
+  const [cartItems, setCartItems] = useState(cartFromLocalStorage);
 
-  // Filter data based on the selected category and search query
   const filteredData = data
-    .filter((category) => (selectedCategory ? category.title === selectedCategory.title : true))
+    .filter((category) =>
+      selectedCategory ? category.title === selectedCategory.title : true
+    )
     .flatMap((category) =>
       category.catalog.filter((item) =>
         item.name.toLowerCase().includes(searchQuery.toLowerCase())
       )
     );
 
-  // Function to handle adding item to the cart
   const handleAddToCart = (item) => {
-    // Check if the item is already in the cart based on the name
-    const existingItem = cartItems.find((cartItem) => cartItem.name === item.name);
+    const existingItem = cartItems.find(
+      (cartItem) => cartItem.name === item.name
+    );
 
     if (existingItem) {
-      // If the item is already in the cart, increase its quantity
       const updatedCart = cartItems.map((cartItem) =>
-        cartItem.name === item.name ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+        cartItem.name === item.name
+          ? {
+              ...cartItem,
+              quantity: cartItem.quantity + 1,
+              totalPrice: (cartItem.quantity + 1) * item.price,
+            }
+          : cartItem
       );
       setCartItems(updatedCart);
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
     } else {
-      // If the item is not in the cart, add it with quantity 1
-      setCartItems([...cartItems, { ...item, quantity: 1 }]);
+      const updatedCart = [
+        ...cartItems,
+        { ...item, quantity: 1, totalPrice: item.price },
+      ];
+      setCartItems(updatedCart);
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
+    }
+  };
+
+  const handleDecreaseQuantity = (item) => {
+    const existingItem = cartItems.find(
+      (cartItem) => cartItem.name === item.name
+    );
+
+    if (existingItem && existingItem.quantity > 0) {
+      const updatedCart = cartItems.map((cartItem) =>
+        cartItem.name === item.name
+          ? {
+              ...cartItem,
+              quantity: cartItem.quantity - 1,
+              totalPrice: (cartItem.quantity - 1) * item.price,
+            }
+          : cartItem
+      );
+      setCartItems(updatedCart);
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
     }
   };
 
@@ -45,18 +77,24 @@ const ProductList = () => {
               />
 
               <p className="font-semibold mt-2 text-2xl">{item.price}</p>
-              <p className="text-xl font-sans border-1 rounded-md">{item.name}</p>
+              <p className="text-xl font-sans border-1 rounded-md">
+                {item.name}
+              </p>
               <div className="flex items-center justify-center mt-2">
                 {cartItems.find((cartItem) => cartItem.name === item.name) ? (
                   <>
                     <button
                       className="bg-gray-200 hover:bg-gray-300 rounded-md py-2 px-4"
-                      onClick={() => handleAddToCart(item)}
+                      onClick={() => handleDecreaseQuantity(item)}
                     >
                       -
                     </button>
                     <span className="mx-2">
-                      {cartItems.find((cartItem) => cartItem.name === item.name).quantity}
+                      {
+                        cartItems.find(
+                          (cartItem) => cartItem.name === item.name
+                        ).quantity
+                      }
                     </span>
                     <button
                       className="bg-gray-200 hover:bg-gray-300 rounded-md py-2 px-4"
@@ -79,7 +117,6 @@ const ProductList = () => {
         ))}
       </div>
 
-      {/* Pass cartItems to your cart component */}
       <MyCart cartItems={cartItems} setCartItems={setCartItems} />
     </div>
   );

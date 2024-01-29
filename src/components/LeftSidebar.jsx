@@ -66,7 +66,7 @@ const LeftSidebar = () => {
         About Delivery
       </button>
       {/* Catalog */}
-      <div className="grid grid-cols-2 max-w-sm sm:max-w-xl">
+      <div className="grid grid-cols-2 max-w-md sm:max-w-xl">
         <div>
           <FilterSection  />       
         </div>
