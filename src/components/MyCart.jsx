@@ -90,19 +90,9 @@ const MyCart = ({ cartItems }) => {
                           </p>
                           <button
                             onClick={() => removeFromCart(index)}
-                            className="text-red-500  hover:text-red-700"
+                            className="text-red-500  hover:text-red-600 text-normal text-bold"
                           >
-                            <svg
-                              className="w-5 h-5"
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M6 18L18 6M6 6l12 12"></path>
-                            </svg>
+                            Remove
                           </button>
                         </div>
                       </div>
