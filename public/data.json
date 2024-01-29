@@ -40,22 +40,22 @@
       {
         "name": "Chocolate Chips",
         "price": 4.49,
-        "image": "chocolate_chips.jpg"
+        "image": "https://thebigmansworld.com/wp-content/uploads/2021/08/vegan-chocolate-chips-4.jpeg"
       },
       {
         "name": "Vanilla Extract",
         "price": 5.99,
-        "image": "vanilla_extract.jpg"
+        "image": "https://puresense.co.in/cdn/shop/articles/banner_229faaea-111c-4c33-833c-0540d71c9e31.jpg?v=1655284716"
       },
       {
         "name": "Baking Powder",
         "price": 2.99,
-        "image": "baking_powder.jpg"
+        "image": "https://www.bhg.com/thmb/kWWQ_DUqGYxdAA4fwmdzXE1A09g=/1244x0/filters:no_upscale():strip_icc()/clabber-girl-baking-powder-measuring-spoon-9QxiGqsHaY-9l-edaGi8Uo-315de2b07ca24479b32c684705719250.jpg"
       },
       {
         "name": "Sugar",
         "price": 1.99,
-        "image": "sugar.jpg"
+        "image": "https://t3.ftcdn.net/jpg/00/56/51/40/360_F_56514025_7ZOm55BsRAgy3Vn64dBWD26W2kN798L6.jpg"
       }
     ]
   },
@@ -65,27 +65,27 @@
       {
         "name": "Beef Hot Dog",
         "price": 5.99,
-        "image": "beef_hot_dog.jpg"
+        "image": "https://img.freepik.com/free-photo/grilled-beef-hot-dog-with-ketchup-snack-generative-ai_188544-7829.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699833600&semt=ais"
       },
       {
         "name": "Turkey Sausage",
         "price": 6.49,
-        "image": "turkey_sausage.jpg"
+        "image": "https://www.seriouseats.com/thmb/zKq67u3TJ3B0wknpgyc-y8ymP3U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2013__11__20131112-turkey-weisswurst-recipe-34-ba385b3d5ab64d1786f45a7b39c20e8e.jpg"
       },
       {
         "name": "Chili Dog",
         "price": 4.99,
-        "image": "chili_dog.jpg"
+        "image": "https://www.shutterstock.com/image-photo/hot-dog-chilli-cheese-bun-600nw-1404361220.jpg"
       },
       {
         "name": "Veggie Dog",
         "price": 3.99,
-        "image": "veggie_dog.jpg"
+        "image": "https://blog.fatfreevegan.com/wp-content/uploads/2014/07/homemade-veggie-dogs-fb.jpg"
       },
       {
         "name": "Bacon-wrapped Hot Dog",
         "price": 7.99,
-        "image": "bacon_hot_dog.jpg"
+        "image": "https://www.seriouseats.com/thmb/Ux0hUsEXRt7Mhp8v4A5bIENNMXI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2013__07__20130716-hot-dog-bun-taste-test-8-2ae9024fd3d04bca9937bb79f5862e9a.jpg"
       }
     ]
   },
@@ -95,27 +95,27 @@
       {
         "name": "Shampoo",
         "price": 7.99,
-        "image": "shampoo.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Head_%26_Shoulders_shampoo_bottle.jpg/681px-Head_%26_Shoulders_shampoo_bottle.jpg"
       },
       {
         "name": "Toothpaste",
         "price": 2.99,
-        "image": "toothpaste.jpg"
+        "image": "https://media.istockphoto.com/id/910543228/photo/toothpaste.jpg?s=612x612&w=0&k=20&c=V4xlwUwRZNkE0Gb61FrQeJJxWwjnWTtcpUE-_5beY6k="
       },
       {
         "name": "Soap",
         "price": 1.49,
-        "image": "soap.jpg"
+        "image": "https://st.depositphotos.com/1782880/1328/i/450/depositphotos_13289946-stock-photo-bar-of-soap.jpg"
       },
       {
         "name": "Deodorant",
         "price": 4.99,
-        "image": "deodorant.jpg"
+        "image": "https://curiebod.com/cdn/shop/files/CURIE-PRODUCT-STICK-FULL-WHITE-TEA_2023_SOLO_164a99af-7484-4909-9d3c-8236c6253c9d_1200x1200.jpg?v=1705417828"
       },
       {
         "name": "Body Lotion",
         "price": 3.79,
-        "image": "body_lotion.jpg"
+        "image": "https://vitacare.com.bd/wp-content/uploads/2023/04/Body-Lotion-scaled.jpg"
       }
     ]
   },
@@ -125,27 +125,27 @@
       {
         "name": "Margherita Pizza",
         "price": 8.99,
-        "image": "margherita_pizza.jpg"
+        "image": "https://cookieandkate.com/images/2021/07/classic-margherita-pizza.jpg"
       },
       {
         "name": "Pepperoni Pizza",
         "price": 9.49,
-        "image": "pepperoni_pizza.jpg"
+        "image": "https://img.freepik.com/premium-photo/fresh-tasty-pizza-with-pepperoni-isolated-white_136401-2336.jpg"
       },
       {
         "name": "Vegetarian Pizza",
         "price": 7.99,
-        "image": "vegetarian_pizza.jpg"
+        "image": "https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg"
       },
       {
         "name": "Hawaiian Pizza",
         "price": 10.99,
-        "image": "hawaiian_pizza.jpg"
+        "image": "https://thecozycook.com/wp-content/uploads/2023/10/Hawaiian-Pizza-f.jpg"
       },
       {
         "name": "BBQ Chicken Pizza",
         "price": 11.49,
-        "image": "bbq_chicken_pizza.jpg"
+        "image": "https://sallysbakingaddiction.com/wp-content/uploads/2014/03/Homemade-BBQ-Chicken-Pizza.jpg"
       }
     ]
   }]
