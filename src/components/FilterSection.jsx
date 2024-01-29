@@ -12,7 +12,7 @@ const FilterSection = () => {
     <div>
       <h3 className='text-2xl mt-16 font-bold mb-8'>Category</h3>
      
-      <div className='flex flex-col items-start ml-2 text-md sm:text-xl gap-y-4'>
+      <div className='flex flex-col items-start ml-2 text-sm sm:text-xl gap-y-4'>
         {data.map((category, index) => (
           <button
             key={index}

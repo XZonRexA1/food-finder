@@ -66,10 +66,10 @@ const ProductList = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid sm:grid-cols-4 gap-4 mb-8 sm:w-[850px] h-full">
+      <div className="grid grid-cols-1 sm:grid sm:grid-cols-4 gap-4 mb-8 sm:w-[850px]  sm:h-full">
         {filteredData.map((item, index) => (
           <div key={index}>
-            <div className="bg-white grid py-2 px-4 rounded-md">
+            <div className="bg-white mr-4 sm:mr-0 grid py-2 px-4 rounded-md">
               <img
                 className="w-72 h-[250px] mx-auto"
                 src={item.image}

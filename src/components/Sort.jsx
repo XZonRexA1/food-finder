@@ -16,7 +16,7 @@ const Sort = () => {
         <select
           name="sort"
           id="sort"
-          className="px-2 text-md font-semibold font-sans py-2 rounded-md border-none bg-white"
+          className="px-2 w-24 sm:w-full sm:text-md font-semibold font-sans py-2 rounded-md border-none bg-white"
           onChange={handleSortChange}
         >
           <option className="rounded-md" value="high">
