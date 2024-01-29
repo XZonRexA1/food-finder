@@ -9,7 +9,7 @@ const ProductProvider = ({ children }) => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   useEffect(() => {
-    const apiUrl = "../../public/data.json";
+    const apiUrl = "../../data.json";
 
     axios.get(apiUrl)
       .then(res => {

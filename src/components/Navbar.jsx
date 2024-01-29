@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="w-full flex items-center">
       <h1 className="text-md sm:text-2xl mx-2">Food</h1>
       <img
-        src="../../public/images/pngegg.png"
+        src="../../images/pngegg.png"
         alt="logo"
         className=" h-12 pt-4 py-2"
       />
@@ -22,7 +22,7 @@ const Navbar = () => {
       <hr className="border-1 border-black hidden sm:block rotate-90 w-12" />
       <div className="px-20 py-4 w-12 hidden sm:block relative z-10 h-12 my-2 bg-white rounded-md">
         <img
-          src="../../public/images/logo.jpg"
+          src="../../images/logo.jpg"
           className="z-20 absolute w-8 h-8  rounded-md -mt-2 -ml-16 "
           alt="logo-png"
         />
