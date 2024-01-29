@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Cold Drinks",
+    "catalog": [
+      {
+        "name": "Soda",
+        "price": 1.99,
+        "image": "https://cdn.pixabay.com/photo/2014/09/12/18/20/can-443123_1280.png"
+      },
+      {
+        "name": "Iced Tea",
+        "price": 2.49,
+        "image": "https://cdn.pixabay.com/photo/2013/07/12/18/21/tea-153336_1280.png"
+      },
+      {
+        "name": "Fruit Punch",
+        "price": 3.29,
+        "image": "https://www.cookclickndevour.com/wp-content/uploads/2016/05/fruit-punch-recipe-a.jpg"
+      },
+      {
+        "name": "Lemonade",
+        "price": 2.99,
+        "image": "https://detoxinista.com/wp-content/uploads/2022/05/lemonade-recipe.jpg"
+      },
+      {
+        "name": "Cola",
+        "price": 1.79,
+        "image": "https://www.gofresh.com.bd/wp-content/uploads/2020/04/coca-cola-bottle-2l.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Baking",
+    "catalog": [
+      {
+        "name": "Flour",
+        "price": 3.99,
+        "image": "https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/All-about-grain-flours-resized.jpg"
+      },
+      {
+        "name": "Chocolate Chips",
+        "price": 4.49,
+        "image": "chocolate_chips.jpg"
+      },
+      {
+        "name": "Vanilla Extract",
+        "price": 5.99,
+        "image": "vanilla_extract.jpg"
+      },
+      {
+        "name": "Baking Powder",
+        "price": 2.99,
+        "image": "baking_powder.jpg"
+      },
+      {
+        "name": "Sugar",
+        "price": 1.99,
+        "image": "sugar.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Hot Dogs",
+    "catalog": [
+      {
+        "name": "Beef Hot Dog",
+        "price": 5.99,
+        "image": "beef_hot_dog.jpg"
+      },
+      {
+        "name": "Turkey Sausage",
+        "price": 6.49,
+        "image": "turkey_sausage.jpg"
+      },
+      {
+        "name": "Chili Dog",
+        "price": 4.99,
+        "image": "chili_dog.jpg"
+      },
+      {
+        "name": "Veggie Dog",
+        "price": 3.99,
+        "image": "veggie_dog.jpg"
+      },
+      {
+        "name": "Bacon-wrapped Hot Dog",
+        "price": 7.99,
+        "image": "bacon_hot_dog.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Beauty and Hygiene",
+    "catalog": [
+      {
+        "name": "Shampoo",
+        "price": 7.99,
+        "image": "shampoo.jpg"
+      },
+      {
+        "name": "Toothpaste",
+        "price": 2.99,
+        "image": "toothpaste.jpg"
+      },
+      {
+        "name": "Soap",
+        "price": 1.49,
+        "image": "soap.jpg"
+      },
+      {
+        "name": "Deodorant",
+        "price": 4.99,
+        "image": "deodorant.jpg"
+      },
+      {
+        "name": "Body Lotion",
+        "price": 3.79,
+        "image": "body_lotion.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Pizza",
+    "catalog": [
+      {
+        "name": "Margherita Pizza",
+        "price": 8.99,
+        "image": "margherita_pizza.jpg"
+      },
+      {
+        "name": "Pepperoni Pizza",
+        "price": 9.49,
+        "image": "pepperoni_pizza.jpg"
+      },
+      {
+        "name": "Vegetarian Pizza",
+        "price": 7.99,
+        "image": "vegetarian_pizza.jpg"
+      },
+      {
+        "name": "Hawaiian Pizza",
+        "price": 10.99,
+        "image": "hawaiian_pizza.jpg"
+      },
+      {
+        "name": "BBQ Chicken Pizza",
+        "price": 11.49,
+        "image": "bbq_chicken_pizza.jpg"
+      }
+    ]
+  }]
+  
